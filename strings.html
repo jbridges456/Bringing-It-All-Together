@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive String Validator</title>
+    <!-- Add creative styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            margin: auto;
+            padding: 20px;
+            max-width: 500px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your Name -->
+    <!-- Name: [Your Name] -->
+    <div class="container">
+        <h1>Interactive String Validator</h1>
+        <p>Enter your full name and zip code to validate!</p>
+        <img src="validator.png" alt="Validation Icon">
+        <form id="validationForm">
+            <label for="nameInput">Full Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <br><br>
+            <label for="zipInput">Zip Code:</label>
+            <input type="text" id="zipInput" placeholder="Enter your zip code">
+            <br><br>
+            <button type="button" onclick="validateInputs()">Submit</button>
+        </form>
+        <p id="resultMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
